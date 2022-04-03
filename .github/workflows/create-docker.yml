@@ -21,6 +21,7 @@ jobs:
       
       - name: Install package
         run: |
+           sudo apt-get -y update
            sudo apt-get -y install ffmpeg pandoc
       
       - name: Build youtube-dl
