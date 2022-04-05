@@ -15,4 +15,4 @@ ENV workdirectory /usr/node
 
 SHELL ["/bin/bash", "-c", "echo Gramof.one Youtube-dl service"]
 
-COPY ./youtube-dl /local/bin/youtube-dl-gfne
+COPY ./youtube-dl /usr/bin/youtube-dl-gfne
