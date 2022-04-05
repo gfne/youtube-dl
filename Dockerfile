@@ -9,7 +9,7 @@ MAINTAINER nirocr@gmail.com
 RUN apt-get update
 RUN apt-get install -y pandoc ffmpeg python
 
-COPY ./youtube-dl /usr/bin
+COPY ./youtube-dl /usr/bin/youtube-dl-gfne
 
 
 EXPOSE 80
