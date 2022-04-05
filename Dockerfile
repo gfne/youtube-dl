@@ -9,10 +9,12 @@ MAINTAINER nirocr@gmail.com
 RUN apt-get update
 RUN apt-get install -y pandoc ffmpeg
 
+COPY ./youtube-dl /usr/bin
+
+
 EXPOSE 80
 
 ENV workdirectory /usr/node
 
 SHELL ["/bin/bash", "-c", "echo Gramof.one Youtube-dl service"]
 
-COPY ./youtube-dl /usr/bin/youtube-dl-gfne
